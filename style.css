@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+:root{
+    --main-background-color: #2f2f2f; 
+    --accent-color: #E8A317;
+}
+
+body {
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: var(--main-background-color);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.logo, ul li{
+    padding: 0 50px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+a{ text-decoration: none; }
+
+ul{
+    list-style-type: none;
+}
+
+a:hover{
+    color: #C28712;
+}
+
+.password-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{ 
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.sub-title{
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fields {
+    width: 400px;
+    height: 70px;
+    background-color: #292929;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#password-field {
+    width: 320px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: 15px;
+    color: var(--accent-color);
+}
+
+.fa-solid {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.generate-pass-button{ color: var(--accent-color); }
+
+.buttons {
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-pass-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--accent-color);
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-pass-button:hover {
+    background-color: #C28712;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+footer{ 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media(max-width: 480px){
+    .password-container {
+        width: 320px;
+    }
+
+    .title{ 
+       font-size: 20px;
+    }
+    
+    .sub-title{
+        font-size: 16px;
+    }
+
+    .fields {
+        width: 320px;
+        height: 60px;
+        padding: 15px;
+    }
+    
+    #password-field {
+        width: 220px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .fa-solid {
+        font-size: 16px;
+    }
+
+    .buttons {
+        width: 320px;
+        margin-top: 15px;
+    }
+    
+    .copy-pass-button {
+        width: 100%;
+        height: 45px;
+    }
+
+    .logo, ul li{
+        padding: 0 35px;
+    }
+}
